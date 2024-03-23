@@ -1,0 +1,11 @@
+(library
+ (name ps6)
+ (modules solvers))
+
+(test
+ (name test)
+ (modules test)
+ (libraries ounit2 ps6))
+
+(env
+ (dev (flags (:standard -warn-error -A))))
